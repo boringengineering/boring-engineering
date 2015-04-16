@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="tachyons.min.css" type="text/css" media="screen" />
+      <style type="text/css" media="screen">
+        body {
+
+        background: #E0FFAB;
+        }
+        section {width: 3200px;}
+        a {display: inline-block;}
+        .demo{
+        width: 600px;
+        height: 600px;
+        font-size: 141px;
+        margin: 20px;
+        position: relative;
+        border-radius: 2px;
+        }
+        .demo p {
+        position: absolute;
+        top: 0;
+        pointer-events: none;
+        }
+
+        .loop {
+          background: url(seq.png);
+        background-size: 228%;
+        background-position: 30% 97%;
+        }
+
+        .loop p {
+            color: #E886E5;
+  transform: rotate(48deg);
+        font-size: 2em;
+  top: -127px;
+  text-shadow: 10px 5px 5px #DCDCDC;
+  left: 30px;
+        }
+
+        .sample {
+          background: url(sk1.jpg);
+          background-size: 283%;
+        background-position: 30% 33%;
+        }
+
+        .sample p {
+            color: #F6AC3D;
+        transform:  rotate(43deg);
+        font-size: 1.5em;
+        top: -50px;
+        text-shadow: 10px 5px 5px #DCDCDC;
+        left: -22px;
+        }
+
+        .control {
+          background: url(push.jpg);
+          background-size: 283%;
+        background-position: 30% 33%;
+        }
+
+        .control p {
+            color:  #4BF4EA;
+  transform: rotate(46deg);
+  font-size: 1.55em;
+  top: -60px;
+  text-shadow: 10px 5px 5px #838383;
+  left: -22px;
+        }
+
+        .edit {
+            background: url(edit.png);
+  background-size: 247%;
+  background-position: 16% 66%;
+        }
+
+        .edit p {
+              color: #68FA9C;
+  transform: rotate(46deg);
+  font-size: 2em;
+  top: -26%;
+  text-shadow: 10px 5px 5px #838383;
+  left: 10%;
+        }
+
+        .noise {
+        width: 100%;
+        height: 100%;
+        background: url(noise.gif);
+        opacity: 0;
+        border-radius: 2px;
+        }
+
+        .noise:hover {
+        opacity: .75;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Boring Engineering</h1>
+
+      <section>
+        <a class="loop demo" href="http://sequence.cassettetap.es">
+            <div class="noise">
+            </div>
+            <p>loop</p>
+          </a>
+
+        <a class="sample demo" href="">
+          <div class="noise">
+          </div>
+          <p>sample</p>
+        </a>
+
+        <a class="control demo" href="http://davejustice.com/midi-bored/">
+          <div class="noise"></div>
+          <p>control</p>
+        </a>
+
+        <a class="edit demo" href="http://edit.cassettetap.es">
+          <div class="noise"></div>
+          <p>edit</p>
+        </a>
+
+        <a href="mailto:davejustishh@gmail.com">ideas</a>
+        <a href="tinyletter.com/meandave">newsletter</a>
+        <a href="http://twitter.com/meandave2020">author</a>
+      </section>
+    </body>
+</html>
