@@ -3,8 +3,10 @@
     <head>
       <link rel="stylesheet" href="tachyons.min.css" type="text/css" media="screen" />
       <style type="text/css" media="screen">
+        @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700,900);
         body {
-
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 700;
         background: #E0FFAB;
         }
         section {width: 3200px;}
@@ -30,12 +32,12 @@
         }
 
         .loop p {
-            color: #E886E5;
+              color: #E886E5;
   transform: rotate(48deg);
-        font-size: 2em;
-  top: -127px;
+  font-size: 2em;
+  top: -33%;
   text-shadow: 10px 5px 5px #DCDCDC;
-  left: 30px;
+  left: 10%;
         }
 
         .sample {
@@ -48,9 +50,9 @@
             color: #F6AC3D;
         transform:  rotate(43deg);
         font-size: 1.5em;
-        top: -50px;
-        text-shadow: 10px 5px 5px #DCDCDC;
-        left: -22px;
+          top: -15%;
+  text-shadow: 10px 5px 5px #DCDCDC;
+  left: 0%;
         }
 
         .control {
@@ -63,9 +65,9 @@
             color:  #4BF4EA;
   transform: rotate(46deg);
   font-size: 1.55em;
-  top: -60px;
+    top: -20%;
   text-shadow: 10px 5px 5px #838383;
-  left: -22px;
+  left: -5%;
         }
 
         .edit {
@@ -78,7 +80,7 @@
               color: #68FA9C;
   transform: rotate(46deg);
   font-size: 2em;
-  top: -26%;
+    top: -33%;
   text-shadow: 10px 5px 5px #838383;
   left: 10%;
         }
@@ -107,24 +109,24 @@
       <h1>Boring Engineering</h1>
       <span class="shutup">shut up</span>
       <section>
-        <a class="loop demo" href="http://sequence.cassettetap.es">
+        <a class="loop demo" idx="1" href="http://sequence.cassettetap.es">
             <div class="noise">
             </div>
             <p>loop</p>
           </a>
 
-        <a class="sample demo" href="">
+        <a class="sample demo" idx="2" href="">
           <div class="noise">
           </div>
           <p>sample</p>
         </a>
 
-        <a class="control demo" href="http://davejustice.com/midi-bored/">
+        <a class="control demo" idx="3" href="http://davejustice.com/midi-bored/">
           <div class="noise"></div>
           <p>control</p>
         </a>
 
-        <a class="edit demo" href="http://edit.cassettetap.es">
+        <a class="edit demo" idx="4" href="http://edit.cassettetap.es">
           <div class="noise"></div>
           <p>edit</p>
         </a>

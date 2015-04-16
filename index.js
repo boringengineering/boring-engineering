@@ -4,12 +4,16 @@ var context = new AudioContext();
 var gainNode = context.createGain();
 gainNode.gain.value = 0.5;
 
-var src = new AudioSource(context, {
-  gainNode: gainNode,
-  url: 'bump.mp3'
-});
+var urls = ['bump.mp3', '88.wav', 'impact.wav', 'low.mp3'];
 
-src.loadSilent();
+var srcs = urls.map(function(url) {
+             var src = new AudioSource(context, {
+               gainNode: gainNode,
+               url: url
+             })
+             src.loadSilent();
+             return src;
+           });
 
 document.querySelector('.shutup').addEventListener('click', function(ev) {
   if (gainNode.gain.value) {
@@ -22,7 +26,7 @@ document.querySelector('.shutup').addEventListener('click', function(ev) {
 });
 
 [].slice.call(document.querySelectorAll('.demo')).forEach(function(el) {
-  el.addEventListener('mouseenter', function() {
-    src.play();
+  el.addEventListener('mouseenter', function(ev) {
+    srcs[parseInt(ev.target.getAttribute('idx'), 10) - 1].play();
   });
 });
