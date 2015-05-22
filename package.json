@@ -1,0 +1,25 @@
+{
+  "name": "boring-engineering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "audiosource": "^0.1.1",
+    "audiocontext": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "watchify -o bundle.js -v -d index.js & http-server -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meandavejustice/boring-engineering.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meandavejustice/boring-engineering/issues"
+  },
+  "homepage": "https://github.com/meandavejustice/boring-engineering#readme"
+}

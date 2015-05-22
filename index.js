@@ -4,7 +4,7 @@ var context = new AudioContext();
 var gainNode = context.createGain();
 gainNode.gain.value = 0.5;
 
-var urls = ['bump.mp3', '88.wav', 'impact.wav', 'low.mp3'];
+var urls = ['bump.mp3', '88.wav', 'impact.wav', 'low.mp3', 'harp.ogg'];
 
 var srcs = urls.map(function(url) {
              var src = new AudioSource(context, {
